@@ -17,7 +17,7 @@ namespace SmartVault.DataGeneration
 				Console.WriteLine($"AccountCount: {JsonConvert.SerializeObject(accountData)}");
 				var documentData = context.Document.Count();
 				Console.WriteLine($"DocumentCount: {JsonConvert.SerializeObject(documentData)}");
-				var userData = context.User.First();
+				var userData = context.User.Count();
 				Console.WriteLine($"UserCount: {JsonConvert.SerializeObject(userData)}");
 			}
 		}
